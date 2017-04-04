@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Apr  3 12:23:02 2017
-
+Created 2017
 @author: AMJ
 """
+#***********************************************************************************
+# Simple min and max queries in python for a small data set of world city visits. 
+#
+#***********************************************************************************
 #%%
 import pandas as pd
 import os
-folderName='Gov A/Data'
+folderName='Data'
 fileName='cities.xlsx'
 fileExcel=os.path.join(folderName,fileName)
-citystats=pd.read_excel(fileExcel) # table '1'
+citystats=pd.read_excel(fileExcel)
 citystats
 #%%
+
 # What was the most visited city in 2015?
 citystats[citystats.visits2015==max(citystats.visits2015)].city
 
@@ -39,28 +43,4 @@ Rank2013=AsiaOnly.sort_values(by=toSort,ascending=Order,).reset_index()
 Rank2013
 Rank2013.iloc[[0,-2],:].city
 #%%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

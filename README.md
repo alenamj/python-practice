@@ -1,2 +1,2 @@
 # python-practice
-Simple Exercises in Python
+A place to work on some simple exercises in python. 
